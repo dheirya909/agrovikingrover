@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGRO VIKING ROVER</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/fav.png" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-primary': '#00ff88',
+                        'green-secondary': '#00cc6a',
+                    },
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'monospace'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white font-inter overflow-x-hidden">
+    <!-- Background -->
+    <div class="fixed inset-0 bg-gradient-to-br from-green-900/20 via-black to-gray-900 -z-10"></div>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/80 backdrop-blur-md border-b border-gray-700/50 z-50 py-4">
+        <div class="container mx-auto px-6">
+            <ul class="flex justify-center space-x-12">
+                <li><a href="#home" class="text-white hover:text-green-primary transition-colors duration-300 font-medium">Home</a></li>
+                <li><a href="#about" class="text-white hover:text-green-primary transition-colors duration-300 font-medium">About</a></li>
+                <li><a href="#faq" class="text-white hover:text-green-primary transition-colors duration-300 font-medium">FAQ</a></li>
+                <li><a href="#download" class="text-white hover:text-green-primary transition-colors duration-300 font-medium">Download</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Rover Image -->
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-green-primary/30 rounded-full blur-3xl animate-pulse gap-16"></div>
+                        <img src="/rover.png" alt="Agro Viking Rover" class="relative z-10 w-full max-w-md rounded-2xl shadow-2xl shadow-green-primary/50 hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+                
+                <!-- Title Section -->
+                <div class="text-center lg:text-left">
+                    <h1 class="font-orbitron text-6xl lg:text-5xl font-black text-white mb-6 leading-tight">
+                        AGRO<br>
+                        <span class="text-green-primary">VIKING ROVER</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 font-light tracking-wide">Advanced Agricultural Vehicle For Soil Surveys</p>
+                    <a href="#about" class="inline-block bg-gradient-to-r from-green-primary to-green-secondary text-black px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-transform duration-300 shadow-lg shadow-green-primary/40">
+                        Explore Mission
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <div class="w-1 h-12 bg-gradient-to-b from-green-primary to-transparent rounded-full relative">
+                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-green-primary"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Overview Section -->
+    <section id="about" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-orbitron text-5xl font-bold text-white mb-4">MISSION OVERVIEW</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-primary to-green-secondary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-center hover:bg-white/15 hover:border-green-primary/50 transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold text-green-primary mb-4">Agricultural Research</h3>
+                    <p class="text-gray-300 text-lg">Advanced soil analysis and crop viability testing on Mars terrain</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-center hover:bg-white/15 hover:border-green-primary/50 transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold text-green-primary mb-4">Cheaper Soil Surveys</h3>
+                    <p class="text-gray-300 text-lg">Cheaper soil surveys for the farmers of India will lead to lesser crop failures</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-center hover:bg-white/15 hover:border-green-primary/50 transition-all duration-300 hover:-translate-y-2">
+                    <h3 class="text-2xl font-semibold text-green-primary mb-4">Data Transmission</h3>
+                    <p class="text-gray-300 text-lg">Real-time data collection and communication with our Software</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-gradient-to-b from-transparent to-green-900/5">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-orbitron text-5xl font-bold text-white mb-4">FREQUENTLY ASKED QUESTIONS</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-primary to-green-secondary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden">
+                    <button class="w-full p-8 text-left hover:bg-white/5 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-white">Why should we use the AGRO VIKING ROVER instead of getting a land survey?</h3>
+                            <span class="text-3xl text-green-primary font-light transition-transform duration-300">+</span>
+                        </div>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="p-8 pt-0">
+                            <p class="text-gray-300 text-lg">The AGRO VIKING ROVER is designed to tackle every common problem that a traditional drone/robot faces. It can easily navigate through difficult terrains while being more budget friendly than EVER.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden">
+                    <button class="w-full p-8 text-left hover:bg-white/5 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-white">How long will the AGRO VIKING ROVER last?</h3>
+                            <span class="text-3xl text-green-primary font-light transition-transform duration-300">+</span>
+                        </div>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="p-8 pt-0">
+                            <p class="text-gray-300 text-lg">The rover is equipped with a rechargeable battery pack, ensuring extended operational life. Additionally, it incorporates two independent subsystems, significantly reducing the likelihood of mechanical failures and enhancing overall reliability.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden">
+                    <button class="w-full p-8 text-left hover:bg-white/5 transition-colors duration-300" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-white">What scientific instruments does the rover carry?</h3>
+                            <span class="text-3xl text-green-primary font-light transition-transform duration-300">+</span>
+                        </div>
+                    </button>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="p-8 pt-0">
+                            <p class="text-gray-300 text-lg">The rover is equipped with soil analyzers, a high-resolution camera and A robotic arm for soil sample collection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-orbitron text-5xl font-bold text-white mb-4">DOWNLOAD RESOURCES</h2>
+                <p class="text-xl text-gray-300 mb-8">Access User Manual, Software, and media resources</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-green-primary to-green-secondary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-center hover:bg-white/15 hover:border-green-primary/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-6xl mb-6">📋</div>
+                    <h3 class="text-2xl font-semibold text-green-primary mb-4">User Manual</h3>
+                    <p class="text-gray-300 text-lg mb-6">Basic understanding towards our software and its usage.</p>
+                    <button class="bg-gradient-to-r from-green-primary to-green-secondary text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg shadow-green-primary/40">
+                        Download PDF
+                    </button>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-2xl text-center hover:bg-white/15 hover:border-green-primary/50 transition-all duration-300 hover:-translate-y-2">
+                    <div class="text-6xl mb-6">🔧</div>
+                    <h3 class="text-2xl font-semibold text-green-primary mb-4">Our Software</h3>
+                    <p class="text-gray-300 text-lg mb-6">Currently a work under progress.</p>
+                    <a href="/agro_rover_app.exe" download class="bg-gradient-to-r from-green-primary to-green-secondary text-black px-8 py-3 rounded-full font-semibold hover:scale-105 transition-transform duration-300 shadow-lg shadow-green-primary/40 inline-block">
+                        Download EXE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 backdrop-blur-md border-t border-gray-700/50 py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-center md:text-left mb-8 md:mb-0">
+                    <h3 class="font-orbitron text-2xl font-bold text-green-primary mb-2">AGRO VIKING ROVER</h3>
+                    <p class="text-gray-300 text-lg">Affordable surveys, Now in the form of rovers</p>
+                    <p class="text-gray-300 text-lg">Made in India 🇮🇳</p>
+                </div>
+                
+                <div class="flex space-x-8">
+                    <a href="#home" class="text-gray-300 hover:text-green-primary transition-colors duration-300">Home</a>
+                    <a href="#about" class="text-gray-300 hover:text-green-primary transition-colors duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-green-primary transition-colors duration-300">FAQ</a>
+                    <a href="#download" class="text-gray-300 hover:text-green-primary transition-colors duration-300">Download</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700/50 pt-8 text-center">
+                <p class="text-gray-500">© 2024 Agro Vikings. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // FAQ toggle
+        function toggleFAQ(button) {
+            const answer = button.nextElementSibling;
+            const toggle = button.querySelector('span');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                if (item !== answer) {
+                    item.style.maxHeight = '0px';
+                    item.parentElement.querySelector('span').style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current FAQ
+            if (isOpen) {
+                answer.style.maxHeight = '0px';
+                toggle.style.transform = 'rotate(0deg)';
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                toggle.style.transform = 'rotate(45deg)';
+            }
+        }
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-black/95');
+            } else {
+                navbar.classList.remove('bg-black/95');
+            }
+        });
+    </script>
+</body>
+</html>
